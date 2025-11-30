@@ -2,9 +2,7 @@
 	import LanguageSelector from "./LanguageSelector.svelte";
 </script>
 
-<header
-  class="flex items-center justify-between w-full py-6 px-8
-         bg-neutral-900 text-white backdrop-blur-sm shadow-md">
+<header class="flex items-center justify-between w-full py-6 px-8 backdrop-blur-xs z-20">
   
   <!-- Left spacer - optional -->
   <div class="w-1/3"></div>
