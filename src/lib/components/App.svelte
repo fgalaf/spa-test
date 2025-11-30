@@ -1,25 +1,21 @@
 <script>
   import { t } from "$lib/i18n/i18n";
-	import LanguageSelector from "./LanguageSelector.svelte";
 </script>
 
-<div class="flex items-center justify-between w-full">
+<main
+  class="relative max-w-full my-12 h-screen mx-auto px-6
+         bg-[url('/images/gpt_bg_0.png')]
+         bg-cover bg-center bg-no-repeat"
+>
+  <!-- Optional overlay for better text readability -->
+  <div class="absolute inset-0 bg-black/40"></div>
 
-  <!-- Left spacer -->
-  <div class="w-1/3"></div>
-
-  <!-- Centered title -->
-  <h1 class="text-center text-3xl font-bold w-1/3">
-    Sialena s.r.o.
-  </h1>
-
-  <!-- Right aligned options -->
-  <LanguageSelector/>
-</div>
-
-<main class="max-w-full my-12 mx-auto px-6 bg-amber-800">
-    <div class="flex justify-around">
-      <h1>{$t("hello")} Jane Doe!</h1>
-      <p>{@html $t("goodbye")}!</p>
-    </div>
+  <div class="relative flex justify-around items-center min-h-[300px]">
+    <h1 class="text-4xl font-bold text-white">
+      {$t("hello")} Jane Doe!
+    </h1>
+    <p class="text-white text-xl">
+      {@html $t("goodbye")}!
+    </p>
+  </div>
 </main>
