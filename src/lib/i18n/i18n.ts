@@ -1,6 +1,6 @@
 // i18n.ts
-import { derived, writable, type Readable } from "svelte/store";
-import translations from "$lib/i18n/translations";
+import { derived, writable, type Readable } from 'svelte/store';
+import translations from '$lib/i18n/translations';
 
 // ---------------------------
 // 1. Build a type from translations
@@ -14,7 +14,7 @@ export type TranslationKeys<L extends Locale> = keyof Translations[L];
 // 2. Locale store
 // ---------------------------
 
-export const locale = writable<Locale>("en");
+export const locale = writable<Locale>('en');
 export const locales = Object.keys(translations) as Locale[];
 
 // ---------------------------
@@ -22,22 +22,22 @@ export const locales = Object.keys(translations) as Locale[];
 // ---------------------------
 
 function translate<L extends Locale, K extends TranslationKeys<L>>(
-  locale: L,
-  key: K,
-  vars: Record<string, string> = {}
+	locale: L,
+	key: K,
+	vars: Record<string, string> = {}
 ): string {
-  if (!key) throw new Error("no key provided to $t()");
-  if (!locale) throw new Error(`no translation for key "${String(key)}"`);
+	if (!key) throw new Error('no key provided to $t()');
+	if (!locale) throw new Error(`no translation for key "${String(key)}"`);
 
-  const text = translations[locale][key] as string;
-  if (!text) throw new Error(`no translation found for ${String(locale)}.${String(key)}`);
+	const text = translations[locale][key] as string;
+	if (!text) throw new Error(`no translation found for ${String(locale)}.${String(key)}`);
 
-  let result = text;
-  Object.keys(vars).forEach((k) => {
-    result = result.replace(new RegExp(`{{${k}}}`, "g"), vars[k]);
-  });
+	let result = text;
+	Object.keys(vars).forEach((k) => {
+		result = result.replace(new RegExp(`{{${k}}}`, 'g'), vars[k]);
+	});
 
-  return result;
+	return result;
 }
 
 // ---------------------------
@@ -45,11 +45,7 @@ function translate<L extends Locale, K extends TranslationKeys<L>>(
 // ---------------------------
 
 export const t: Readable<
-  <L extends Locale, K extends TranslationKeys<L>>(
-    key: K,
-    vars?: Record<string, string>
-  ) => string
+	<L extends Locale, K extends TranslationKeys<L>>(key: K, vars?: Record<string, string>) => string
 > = derived(locale, ($locale) => {
-  return (key: any, vars = {}) =>
-    translate($locale, key as any, vars);
+	return (key: any, vars = {}) => translate($locale, key as any, vars);
 });

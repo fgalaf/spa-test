@@ -1,7 +1,6 @@
 <script>
   import { t } from "$lib/i18n/i18n";
 	import LanguageSelector from "./LanguageSelector.svelte";
-
 </script>
 
 <div class="flex items-center justify-between w-full">
@@ -20,8 +19,7 @@
 
 <main class="max-w-full my-12 mx-auto px-6 bg-amber-800">
     <div class="flex justify-around">
-
-        <h1>{$t("hello")} Jane Doe!</h1>
-        <p>{@html $t("goodbye")}!</p>
+      <h1>{$t("hello")} Jane Doe!</h1>
+      <p>{@html $t("goodbye")}!</p>
     </div>
 </main>
