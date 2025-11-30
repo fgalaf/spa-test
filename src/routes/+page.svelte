@@ -3,5 +3,7 @@
 	import Header from "$lib/components/Header.svelte";
 </script>
 
-<Header/>
-<App/>
+<div>
+    <Header/>
+    <App/>
+</div>
