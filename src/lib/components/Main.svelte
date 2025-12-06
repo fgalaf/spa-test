@@ -4,31 +4,37 @@
 </script>
 
 <main>
-  <div class="relative flex justify-around items-end min-h-[300px]">
-    
+  <div class="grid sm:grid-cols-3 items-center min-h-[300px]">
+
     {#if reverse}
-      <!-- Text first -->
-      <div>
+      <!-- TEXT ON LEFT -->
+      <div class="ml-4 sm:ml-16 col-span-1 bg-black/40 p-4 rounded-xl">
         <h1 class="text-3xl sm:text-4xl font-bold">
-          {$t("header_0")} Jane Doe!
+          {$t("header_1")}
         </h1>
-        <p class="text-xl">
-          {@html $t("main_text_0")}!
+
+        <p class="text-xl mt-2">
+          {@html $t("main_text_1")}
         </p>
       </div>
 
-      <div class="hidden min-w-4/6 sm:block flex-1"></div>
+      <!-- EMPTY MIDDLE + RIGHT -->
+      <div></div>
+      <div></div>
 
     {:else}
-      <!-- Image/space first -->
-      <div class="hidden min-w-4/6 sm:block flex-1"></div>
+      <!-- EMPTY LEFT + MIDDLE -->
+      <div></div>
+      <div></div>
 
-      <div>
+      <!-- TEXT ON RIGHT -->
+      <div class="mr-4 sm:mr-16 col-span-1 bg-black/40 p-4 rounded-xl">
         <h1 class="text-3xl sm:text-4xl font-bold">
-          {$t("header_0")} Jane Doe!
+          {$t("header_0")}
         </h1>
-        <p class="text-xl">
-          {@html $t("main_text_0")}!
+
+        <p class="text-xl mt-2">
+          {@html $t("main_text_0")}
         </p>
       </div>
     {/if}
