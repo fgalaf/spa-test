@@ -7,7 +7,7 @@
   <div class="hidden sm:block flex-1"></div>
 
   <!-- Title: adjusts size on phones -->
-  <h1 class="text-center text-2xl sm:text-3xl font-semibold tracking-wide flex-1">
+  <h1 class="text-center text-3xl sm:text-4xl font-semibold tracking-wide flex-1">
     Sialena s.r.o.
   </h1>
 
