@@ -11,7 +11,7 @@
 <main>
   <div class="grid sm:grid-cols-3 items-center min-h-[300px]">
 
-    <div class={`col-span-1 ${colClass} backdrop-blur-xs p-4 rounded-xl`}>
+    <div class={`col-span-1 ${colClass} backdrop-blur-sm bg-linear-to-b from-white/20 to-white/10 p-4 rounded-xl`}>
       <h1 class="text-3xl sm:text-4xl font-bold">
         {headerKey}
       </h1>

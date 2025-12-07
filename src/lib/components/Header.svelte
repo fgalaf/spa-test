@@ -2,7 +2,7 @@
     import LanguageSelector from "./LanguageSelector.svelte";
 </script>
 
-<header class="flex items-center justify-between w-full px-4 backdrop-blur-xs sticky top-0 left-0 z-20">
+<header class="flex items-center justify-between w-full px-4 backdrop-blur-sm sticky top-0 left-0 z-20">
   <!-- Left spacer: hidden on small screens -->
   <div class="hidden sm:block flex-1"></div>
 

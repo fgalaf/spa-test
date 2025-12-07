@@ -19,14 +19,7 @@
 
 <button
   on:click={scrollToTop}
-  class="
-    fixed bottom-4 right-4 z-50
-    bg-white/80 text-black
-    px-4 py-2 rounded-md
-    shadow-lg backdrop-blur-sm
-    hover:bg-white
-    transition
-  "
+  class="fixed bottom-4 right-4 z-50 bg-white/80 text-black px-4 py-2 rounded-md hover:bg-white transition"
   class:hidden={!visible}
 >
   <Icon icon="mingcute:up-fill" class="w-6 h-6"/>
