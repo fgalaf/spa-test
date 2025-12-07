@@ -11,12 +11,12 @@
 <main>
   <div class="grid sm:grid-cols-3 items-center min-h-[300px]">
 
-    <div class={`col-span-1 ${colClass} backdrop-blur-sm bg-linear-to-b from-white/20 to-white/10 p-4 rounded-xl`}>
-      <h1 class="text-3xl sm:text-4xl font-bold">
+    <div class={`col-span-1 ${colClass} backdrop-blur-md bg-white/20 dark:bg-gray-900/30 p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300`}>
+      <h1 class="text-2xl sm:text-4xl font-bold text-gray-900 dark:text-white">
         {headerKey}
       </h1>
 
-      <p class="text-xl mt-2">
+      <p class="text-xl mt-2 text-gray-800 dark:text-gray-200">
         {textKey}
       </p>
 
