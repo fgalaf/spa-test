@@ -8,7 +8,7 @@
 
     {#if reverse}
       <!-- TEXT ON LEFT -->
-      <div class="ml-4 sm:ml-16 col-span-1 bg-black/40 p-4 rounded-xl">
+      <div class="sm:ml-16 col-span-1 backdrop-blur-xs p-4 rounded-xl transition-transform duration-300 hover:scale-[1.03]">
         <h1 class="text-3xl sm:text-4xl font-bold">
           {$t("header_1")}
         </h1>
@@ -28,7 +28,7 @@
       <div></div>
 
       <!-- TEXT ON RIGHT -->
-      <div class="mr-4 sm:mr-16 col-span-1 bg-black/40 p-4 rounded-xl">
+      <div class="sm:mr-16 col-span-1 backdrop-blur-xs p-4 rounded-xl transition-transform duration-300 hover:scale-[1.03]">
         <h1 class="text-3xl sm:text-4xl font-bold">
           {$t("header_0")}
         </h1>

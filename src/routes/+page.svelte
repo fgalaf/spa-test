@@ -2,7 +2,7 @@
 	import Main from "$lib/components/Main.svelte";
 	import Header from "$lib/components/Header.svelte";
 	import BackToTop from "$lib/components/BackToTop.svelte";
-	import Second from "$lib/components/Second.svelte";
+	import Second from "$lib/components/second/Second.svelte";
 </script>
 
 <div class="flex flex-col w-full min-h-screen bg-[url('/images/gpt_bg_0.png')] bg-cover bg-center bg-no-repeat relative">

@@ -8,7 +8,7 @@
 
   <!-- Title: adjusts size on phones -->
   <h1 class="text-center text-3xl sm:text-4xl font-semibold tracking-wide flex-1">
-    Sialena s.r.o.
+    Kabľikar industries
   </h1>
 
   <!-- Right side: language buttons -->
