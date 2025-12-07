@@ -1,5 +1,6 @@
 <script>
   import { onMount } from "svelte";
+  import Icon from '@iconify/svelte';
   let visible = false;
 
   onMount(() => {
@@ -28,5 +29,5 @@
   "
   class:hidden={!visible}
 >
-  ↑ Top
+  <Icon icon="mingcute:up-fill" class="w-6 h-6"/>
 </button>
